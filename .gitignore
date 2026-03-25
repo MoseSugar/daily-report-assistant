@@ -12,4 +12,6 @@ Thumbs.db
 
 app-data/
 
-.agents/
+.agents/*
+!.agents/skills/
+!.agents/skills/**
