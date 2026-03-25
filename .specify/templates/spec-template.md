@@ -68,8 +68,13 @@
 ### Edge Cases
 
 <!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right edge cases.
+  ACTION REQUIRED: Include edge cases for local-first reliability, explicit
+  failure handling, and degraded operation. For this project type, consider:
+  - offline / AI service unavailable
+  - sensitive config missing or invalid
+  - local persistence write/read failure
+  - reminder or desktop capability failure
+  - clipboard/export failure
 -->
 
 - What happens when [boundary condition]?
@@ -90,6 +95,13 @@
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
 
+When applicable, requirements MUST explicitly cover:
+- local-first behavior and offline availability for core flows
+- fallback behavior when AI/network features are disabled or fail
+- protection of sensitive configuration and user content
+- date-based organization of user records
+- clear out-of-scope boundaries for non-MVP capabilities
+
 *Example of marking unclear requirements:*
 
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
@@ -104,7 +116,9 @@
 
 <!--
   ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
+  These must be technology-agnostic, measurable, and tied to core user flows.
+  At least one criterion should validate the primary workflow end-to-end, and
+  critical flows should have an identified minimal verification method.
 -->
 
 ### Measurable Outcomes

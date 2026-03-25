@@ -31,7 +31,18 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Confirm the feature strengthens the Windows 11 desktop daily-report workflow
+  instead of expanding into generic project management.
+- Confirm the primary path preserves the core loop: quick capture -> same-day
+  summary -> status/comment editing -> AI polish -> copyable report output.
+- Confirm interactions remain low-interruption and keyboard-first where capture
+  or review speed is core to the flow.
+- Confirm local-first storage, date-based organization, and offline usability;
+  AI or network loss must not block basic report viewing, editing, or generation.
+- Confirm sensitive configuration and user content stay within explicit security
+  boundaries; all network behavior must be optional and disableable.
+- Confirm scope stays within MVP and that acceptance criteria plus minimal
+  verification exist for each critical user flow.
 
 ## Project Structure
 

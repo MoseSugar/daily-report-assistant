@@ -1,0 +1,272 @@
+:root {
+  color-scheme: light;
+  font-family:
+    "Segoe UI", "Microsoft YaHei UI", "PingFang SC", sans-serif;
+  background:
+    radial-gradient(circle at top left, #f5f2e8, #f2f6fb 45%, #eef2f4 100%);
+  color: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  padding: 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.app-header h1,
+.window-panel h2 {
+  margin: 0 0 8px;
+}
+
+.window-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.window-nav button {
+  padding: 10px 14px;
+  border: 1px solid #cad5df;
+  background: #ffffff;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.window-nav button.active {
+  background: #17324d;
+  color: #ffffff;
+  border-color: #17324d;
+}
+
+.window-panel {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d8e2ea;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 16px 36px rgba(29, 54, 79, 0.08);
+}
+
+.capture-form {
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
+}
+
+.capture-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cad5df;
+  resize: vertical;
+  min-height: 110px;
+}
+
+.capture-form button {
+  width: fit-content;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #17324d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.capture-form button:disabled {
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.feedback {
+  margin: 12px 0 0;
+}
+
+.feedback.success {
+  color: #1d6b45;
+}
+
+.feedback.error {
+  color: #a12b2b;
+}
+
+.error-banner {
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #f1b7b7;
+  background: #fff3f3;
+  color: #8d1f1f;
+}
+
+.saved-task-list {
+  margin-top: 24px;
+  border-top: 1px solid #d8e2ea;
+  padding-top: 20px;
+}
+
+.saved-task-list ol {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+.saved-task-list li {
+  background: #f7fafc;
+  border: 1px solid #d9e4ec;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.saved-task-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: #52606d;
+}
+
+.settings-form {
+  display: grid;
+  gap: 12px;
+  max-width: 760px;
+}
+
+.settings-section {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  background: #f7fafc;
+  border: 1px solid #d9e4ec;
+  border-radius: 14px;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.settings-form label {
+  display: grid;
+  gap: 6px;
+}
+
+.settings-form input,
+.settings-form textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cad5df;
+}
+
+.checkbox-row {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.field-hint {
+  margin: 0;
+  color: #52606d;
+  font-size: 0.92rem;
+}
+
+.summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.summary-actions button,
+.task-row-fields button {
+  width: fit-content;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #17324d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.task-list {
+  display: grid;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.task-row-editor {
+  background: #f7fafc;
+  border: 1px solid #d9e4ec;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.task-row-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.task-row-fields {
+  display: grid;
+  gap: 10px;
+}
+
+.task-row-fields label {
+  display: grid;
+  gap: 6px;
+}
+
+.task-row-fields select,
+.task-row-fields input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cad5df;
+}
+
+.report-preview {
+  margin-top: 24px;
+  border-top: 1px solid #d8e2ea;
+  padding-top: 20px;
+}
+
+.report-preview pre {
+  white-space: pre-wrap;
+  background: #f7fafc;
+  border: 1px solid #d9e4ec;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.empty-state {
+  background: #f7fafc;
+  border: 1px dashed #c3d2df;
+  border-radius: 14px;
+  padding: 18px;
+}

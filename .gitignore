@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+coverage/
+*.log
+
+src-tauri/target/
+src-tauri/.cargo/
+
+.DS_Store
+Thumbs.db
+
+app-data/
+
+.agents/
